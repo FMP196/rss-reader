@@ -1,0 +1,60 @@
+<resources>
+
+	<string name="app_name">RSS Reader</string>
+	<string name="menu_addrss">Add Feed</string>
+	<string name="menu_refresh">Refresh</string>
+	<string name="menu_settings">Settings</string>
+	<string name="menu_delete">Delete</string>
+	<string name="menu_mark_read">Mark as read</string>
+	<string name="menu_mark_unread">Mark as unread</string>
+	<string name="menu_favourite_post">Mark as favourite</string>
+	<string name="menu_not_favourite_post">Remove favourite</string>
+	<string name="menu_share">Share post</string>
+	<string name="menu_options">Options</string>
+
+	<string name="introduction">No RSS Feeds found!\n\nTo add a new feed click on the phone image\nor the plus button</string>
+	<string name="fetchRssFeed">Fetching RSS Feed informations ...</string>
+	<string name="loadRssFeed">Loading RSS Feeds ...</string>
+	<string name="fetchRssFeedItems">Fetching RSS Feed Items ...</string>
+	<string name="noRssFeedsFound">No RSS Feeds found at this URL!</string>
+	<string name="searchForRss">Search for RSS on website</string>
+
+	<string name="addRssFeed">Add RSS Feed</string>
+	<string name="addRssFeedDescription">Insert RSS Feed address</string>
+	<string name="frequency">Update Frequency</string>
+	<string name="frequencyRefresh">Update every 1 hour</string>
+	<string name="frequencyDescription">Sets the update frequency time of new posts</string>
+	<string name="notification">Notifications</string>
+	<string name="notificationDescription">Enable the notification of new articles</string>
+	
+	<string name="autoUpdate">Auto Update</string>
+	<string name="autoUpdateDescription">Periodically checks for new articles</string>
+	
+	<string name="bitlyError">bit.ly Error!\nPlease check your internet connection or be sure that your bit.ly account is correct</string>
+	<string name="bitlyService">bit.ly URL shortening ...</string>
+	<string name="bitlySettings">bit.ly Settings</string>
+	<string name="bitlyDefaultAccount">Use default account</string>
+	<string name="bitlyAccountDescription">Set bit.ly user settings</string>
+	
+	<string name="feedAlreadyExists">already exists!</string>
+	<string name="addFeedSuccesfull">New feed added successfully to the database</string>
+	<string name="defaultDescription">Description</string>
+	<string name="postDescription">Type a description (optional)</string>
+	<string name="username">Username or Email</string>
+	<string name="key">Your key</string>
+	<string name="empty"></string> 
+	<string name="http">http://</string>
+	<string name="rssAddress">RSS Feed address</string>
+	<string name="httpAddress">Insert Website URL</string>
+	<string name="fullscreen">Fullscreen</string>
+	<string name="fullscreenDescription">Enable or disable fullscreen mode</string>
+	<string name="xFeedsFound">new feeds found</string>
+	<string name="newFeedsFound">New feeds found</string>
+	<string name="checkForUpdates">Checking for updates ...</string>
+	<string name="updateEvery">Update every</string>
+	<string name="hour">hour</string>
+	<string name="hours">hours</string>
+	<string name="noUpdates">No updates found!</string>
+	<string name="noInternetConnection">Failed to retrieve feed. Please check your internet connection!</string>
+
+</resources>

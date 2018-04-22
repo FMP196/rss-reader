@@ -1,0 +1,46 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_gravity="fill"
+    android:layout_weight="1">
+    
+    <LinearLayout 
+        android:padding="5dip"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_gravity="fill_horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:text="@string/addRssFeed"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+            android:layout_marginTop="10dip"
+            android:text="@string/addRssFeedDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <EditText
+            android:id="@+id/txtUrl"
+            android:inputType="textUri"
+            android:hint="@string/rssAddress"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip" > 
+            <requestFocus/>
+        </EditText>
+        
+        <CheckBox
+        	android:id="@+id/checkBoxSearch"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/searchForRss" />
+        
+    </LinearLayout>
+</ScrollView>

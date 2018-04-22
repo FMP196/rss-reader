@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+		android:id="@+id/menu_addrss"
+		android:title="@string/menu_addrss"
+		android:icon="@android:drawable/ic_menu_add" />
+	
+	<item 
+		android:id="@+id/menu_refresh"
+		android:title="@string/menu_refresh"
+		android:icon="@android:drawable/ic_menu_rotate" />
+	<item 
+		android:id="@+id/menu_settings"
+		android:title="@string/menu_settings"
+		android:icon="@android:drawable/ic_menu_preferences" />
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/empty"
+        android:src="@android:drawable/divider_horizontal_dark"/>
+
+    <include layout="@layout/addrss_content"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:paddingBottom="1dip"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="@style/ButtonBar">
+        
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok"
+            android:layout_weight="0.5"
+            android:onClick="onClick"
+            style="@style/Widget.Button.Dialog"/>
+        
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+            android:onClick="onClick"
+            android:layout_weight="0.5"
+            style="@style/Widget.Button.Dialog"/>
+    </LinearLayout>
+</LinearLayout>

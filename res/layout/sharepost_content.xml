@@ -1,0 +1,37 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_gravity="fill"
+    android:layout_weight="1">
+    
+    <LinearLayout 
+        android:padding="5dip"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_gravity="fill_horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:text="@string/menu_share"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+            android:layout_marginTop="10dip"
+            android:text="@string/postDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <EditText
+            android:id="@+id/txtDescription"
+            android:hint="@string/defaultDescription"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip" /> 
+              
+    </LinearLayout>
+</ScrollView>

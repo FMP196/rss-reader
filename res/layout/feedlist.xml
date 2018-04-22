@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip">
+    
+	<include
+	    android:id="@+id/thumbnail" 
+		layout="@layout/thumbnail"/>
+    
+    <TextView android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"/>
+ 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/thumbnail"
+        android:layout_toRightOf="@id/thumbnail"
+        android:textAppearance="@style/TitleText"
+        android:paddingRight="20dp" />
+ 
+    <TextView android:id="@+id/link"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+		android:layout_toRightOf="@id/thumbnail"
+		android:layout_below="@id/title"
+        android:textAppearance="@style/LinkText"/>
+    
+    <TextView
+        android:id="@+id/unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_below="@+id/link"
+        android:textAppearance="@style/UnreadText" />
+    
+	<ImageView
+	    android:id="@+id/arrow"
+	    android:src="@drawable/ic_arrow"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/empty"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+ 
+</RelativeLayout>

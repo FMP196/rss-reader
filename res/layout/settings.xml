@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/include1"
+        layout="@layout/header" />
+    
+    <TextView
+        android:id="@+id/txtSettingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="60dp"
+        android:text="@string/menu_settings"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtAutoUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSettingsTitle"
+        android:paddingLeft="10dip"
+        android:text="@string/autoUpdate"
+        android:textStyle="bold"
+        android:textAppearance="@style/RssCustomColor"/>
+    
+    <TextView
+        android:id="@+id/txtAutoUpdateDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAutoUpdate"
+        android:paddingLeft="10dip"
+        android:text="@string/autoUpdateDescription" />
+    
+    <TextView
+        android:id="@+id/txtFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAutoUpdateDescription"
+        android:paddingLeft="10dip"
+        android:paddingTop="30dip"
+        android:textStyle="bold"
+        android:text="@string/frequency"
+        android:textAppearance="@style/RssCustomColor" />
+
+    <TextView
+        android:id="@+id/txtFrequencyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFrequency"
+        android:paddingLeft="10dip"
+        android:text="@string/frequencyDescription" />
+
+    <TextView
+        android:id="@+id/txtFrequencyRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFrequencyDescription"
+        android:paddingLeft="10dip"
+        android:text="@string/frequencyRefresh" />
+
+    <SeekBar
+        android:id="@+id/seekBarFreq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFrequencyRefresh"
+        android:max="24"
+        android:paddingLeft="10dip"
+        android:paddingRight="20dip"
+        android:progress="5" />
+
+    <TextView
+        android:id="@+id/txtNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarFreq"
+        android:paddingLeft="10dip"
+        android:paddingTop="30dip"
+        android:textStyle="bold"
+        android:text="@string/notification"
+        android:textAppearance="@style/RssCustomColor" />
+
+    <TextView
+        android:id="@+id/txtNotificationDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNotification"
+        android:paddingLeft="10dip"
+        android:text="@string/notificationDescription" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNotificationDescription"
+        android:layout_alignBottom="@+id/txtNotificationDescription"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip" />
+
+    <TextView
+        android:id="@+id/txtBitlyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNotificationDescription"
+        android:paddingLeft="10dip"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        android:text="@string/bitlySettings"
+        android:textAppearance="@style/RssCustomColor" />
+ 
+    <TextView
+        android:id="@+id/txtBitlyAccountDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBitlyAccount"
+        android:paddingLeft="10dip"
+        android:text="@string/bitlyAccountDescription" />
+
+    <ImageView
+        android:id="@+id/imbBitlyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBitlyAccount"
+        android:layout_alignBottom="@+id/txtBitlyAccount"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/empty"
+        android:paddingRight="25dip"
+        android:src="@drawable/ic_arrow" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAutoUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtAutoUpdateDescription"
+        android:layout_alignBottom="@+id/txtAutoUpdateDescription"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip" />
+
+    <TextView
+        android:id="@+id/txtFullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBitlyAccountDescription"
+        android:paddingLeft="10dip"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        android:text="@string/fullscreen"
+        android:textAppearance="@style/RssCustomColor" />
+
+    <TextView
+        android:id="@+id/txtFullscreenDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtFullscreen"
+        android:paddingLeft="10dip"
+        android:text="@string/fullscreenDescription" 
+       android:paddingBottom="20dip"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxFullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtFullscreenDescription"
+        android:layout_alignBottom="@+id/txtFullscreenDescription"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip" />
+
+</RelativeLayout>
+
+</ScrollView>
